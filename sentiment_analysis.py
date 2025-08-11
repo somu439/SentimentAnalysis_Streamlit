@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-import seaborn as sns
+# import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import confusion_matrix
