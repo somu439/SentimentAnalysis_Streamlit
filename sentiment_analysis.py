@@ -75,15 +75,15 @@ with tab_graphs:
     st.plotly_chart(fig3, use_container_width=True)
 
     # 4. Confusion Matrix (Simulated Example for Demo)
-    st.markdown("#### 4. Confusion Matrix (Example - Random Predictions for Demo)")
-    np.random.seed(42)
-    fake_preds = np.random.choice(df['sentiment'].unique(), size=len(df))
-    cm = confusion_matrix(df['sentiment'], fake_preds, labels=['negative','neutral','positive'])
-    fig_cm, ax = plt.subplots()
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Neg','Neu','Pos'], yticklabels=['Neg','Neu','Pos'], ax=ax)
-    ax.set_xlabel("Predicted Label")
-    ax.set_ylabel("True Label")
-    st.pyplot(fig_cm)
+    # st.markdown("#### 4. Confusion Matrix (Example - Random Predictions for Demo)")
+    # np.random.seed(42)
+    # fake_preds = np.random.choice(df['sentiment'].unique(), size=len(df))
+    # cm = confusion_matrix(df['sentiment'], fake_preds, labels=['negative','neutral','positive'])
+    # fig_cm, ax = plt.subplots()
+    # sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Neg','Neu','Pos'], yticklabels=['Neg','Neu','Pos'], ax=ax)
+    # ax.set_xlabel("Predicted Label")
+    # ax.set_ylabel("True Label")
+    # st.pyplot(fig_cm)
 
 # TAB 3: Model Prediction
 
